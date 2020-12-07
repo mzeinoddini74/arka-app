@@ -1,0 +1,101 @@
+<div class="wrapper">
+  <header class="pc-header">
+    <nav class="navbar navbar-expand-lg py-1">
+      <div class="container">
+        <a href="#" class="navbar-brand">
+          <img src="../../../../assets/images/other/logo.svg" alt="Logo" class="img-fluid img-logo">
+        </a>
+        <div class="collapse navbar-collapse appMenu">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"><a
+              class="nav-link">صفحه اصلی</a><span class="underline"></span></li>
+            <li class="nav-item" routerLink="/" routerLinkActive="active"><a class="nav-link">درباره ما</a><span
+              class="underline"></span></li>
+            <li class="nav-item" routerLink="/" routerLinkActive="active"><a class="nav-link">خدمات</a><span
+              class="underline"></span></li>
+            <li class="nav-item" routerLink="/" routerLinkActive="active"><a class="nav-link">پروژه ها</a><span
+              class="underline"></span></li>
+            <li class="nav-item" routerLink="/" routerLinkActive="active"><a class="nav-link">اخبار</a><span
+              class="underline"></span></li>
+            <li class="nav-item" routerLink="/" routerLinkActive="active"><a class="nav-link">تماس با ما</a><span
+              class="underline"></span></li>
+          </ul>
+
+          <section class="float-left btns-account">
+            <a routerLink="/" routerLinkActive="active" class="btn account-btn">
+              سفارش پروژه
+            </a>
+          </section>
+        </div>
+      </div>
+    </nav>
+    <div class="container justify-content-center header-content">
+      <div class="col-12 pt-5 align-self-center">
+        <h1>
+          عنوان
+        </h1>
+        <p>
+          توضیحات
+        </p>
+      </div>
+    </div>
+  </header>
+
+
+  <header class="mobile-header">
+    <nav class="navbar navbar-expand-lg py-1">
+      <div class="container">
+        <a href="#" class="navbar-brand">
+          <img src="../../../../assets/images/other/logo.svg" alt="Logo" class="img-fluid img-logo">
+        </a>
+        <button (click)="showMobileMenu()" type="button">
+          <i class="fa fa-bars text-white"></i>
+        </button>
+      </div>
+    </nav>
+    <div class="container justify-content-center header-content">
+      <div class="col-12 pt-5 align-self-center">
+        <h1>
+          عنوان
+        </h1>
+        <p>
+          توضیحات
+        </p>
+      </div>
+    </div>
+  </header>
+
+</div>
+
+<div class="container-fluid feature-div">
+  <div class="container feature-parent">
+    <div class="row justify-content-center overlay h-100">
+      <div class="col-4 align-self-center feature-item">
+        <h2>1</h2>
+        <p>111</p>
+      </div>
+      <div class="col-4 align-self-center feature-item">
+        <h2>2</h2>
+        <p>222</p>
+      </div>
+      <div class="col-4 align-self-center feature-item">
+        <h2>3</h2>
+        <p>333</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MENU -->
+<p-sidebar class="menuSidebar" Scroll [(visible)]="displayMobileMenu" [blockScroll]="true"
+           [modal]="true"
+           position="right">
+  <div class=" text-center shoppingMe">
+    <img height="35px" src="assets/images/other/logo.svg" >
+  </div>
+  <div class="d-flex flex-column">
+    <div class="mb-auto">
+      <p-panelMenu [model]="items" [style]="{'width':'100%'}"></p-panelMenu>
+    </div>
+  </div>
+</p-sidebar>

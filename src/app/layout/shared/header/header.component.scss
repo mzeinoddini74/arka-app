@@ -1,0 +1,269 @@
+@media (max-width: 991px) {
+  .mobile-header{
+    display: block;
+  }
+  .pc-header{
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  .mobile-header{
+    display: none;
+  }
+  .pc-header{
+    display: block;
+  }
+}
+
+
+header {
+  width: 100%;
+  height: 500px;
+  background-image: linear-gradient(rgba(1, 148, 249, .2), rgba(1, 148, 249, .6)),
+  url('//spin.atomicobject.com/wp-content/uploads/20170324102432/portfolio-tips-feature-image.jpg');
+  background-size: cover;
+}
+
+.header-content {
+  text-align: right;
+  color: #ffffff;
+  margin-top: 5%;
+}
+
+.header-content h1 {
+  font-family: IRANSans_Bold;
+  font-size: 60px;
+}
+
+.header-content h1:before {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  border-top: 0.3rem solid #ffffff;
+  width: 5rem;
+  margin: 0 1rem;
+  transform: translateY(-1rem);
+  right: -100px;
+  top: 80px;
+}
+
+.header-content p {
+  margin-top: 25px;
+  line-height: 40px;
+  font-size: 20px;
+}
+
+nav {
+  color: #ffffff;
+  background-color: transparent;
+  transition: all .5s ease;
+}
+
+.navbar-brand {
+  color: #ffffff;
+}
+
+.nav-link {
+  color: #ffffff;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  background: #fff;
+  padding: 15px;
+  right: 0;
+  border: none;
+  min-width: 13rem;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  color: #343A40;
+}
+
+.img-logo {
+  width: 50px;
+}
+
+.dropdown-item {
+  color: #343A40 !important;
+  font-size: 14px;
+}
+
+.nav-item {
+  padding: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+
+.nav-link:focus, .nav-item:focus {
+  outline: none !important;
+  border: none;
+}
+
+ul {
+  padding-right: 0px;
+}
+
+.account-btn {
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: transparent;
+  padding: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px #0194D1 solid;
+  position: relative;
+  z-index: 1;
+  transition: all .5s ease;
+  line-height: unset;
+  border-radius: 0px;
+}
+
+@media screen and (max-width: 978px) {
+  .navbar-nav {
+    margin-top: 20px;
+  }
+  .nav-item {
+    border-bottom: 1px #f2f2f2 solid;
+  }
+  .nav-item.active {
+    border-bottom: 1px #f2f2f2 solid;
+  }
+  .nav-item:last-child {
+    margin-bottom: 50px;
+  }
+  .nav-item:hover .underline {
+    width: 0%;
+  }
+  .btns-account {
+    padding-bottom: 15px;
+  }
+  .btns-account.float-left {
+    float: none !important;
+    text-align: center !important;
+  }
+}
+
+.navbar-brand {
+  margin-right: unset;
+}
+
+.feature-div {
+  background-color: #F8F6FA;
+}
+
+.feature-parent {
+  position: relative;
+  z-index: 0;
+  background-repeat: repeat;
+  background-color: #fff;
+  height: 150px;
+  width: 100%;
+  top: -75px;
+  padding: 20px;
+  box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+}
+
+.feature-item {
+  text-align: right;
+}
+
+.feature-item h2 {
+  font-family: IRANSans_Bold;
+  font-size: 20px;
+}
+
+.feature-item p {
+  font-family: IRANSans_Bold;
+  font-size: 14px;
+}
+
+
+
+
+:host::ng-deep .p-panelmenu {
+  text-align: right;
+  direction: rtl;
+  margin-top: 30px;
+  width: 100%!important;
+  background-color: transparent!important;
+  border: none!important;
+}
+:host::ng-deep .p-panelmenu .p-panelmenu-header > a .p-panelmenu-icon {
+  position: absolute;
+  left: 0;
+  margin-right: unset!important;
+  margin-left: 0.5rem;
+}
+:host::ng-deep .pi-chevron-right:before {
+  content: "\e900";
+}
+
+:host::ng-deep .pi-angle-right:before {
+  content: "\e931";
+}
+
+:host::ng-deep .p-panelmenu .p-panelmenu-header.p-highlight > a {
+  background: transparent!important;
+  border-color: transparent!important;
+  color: #4d4d4d!important;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+:host::ng-deep .p-panelmenu .p-panelmenu-header:not(.p-highlight):not(.p-disabled) > a {
+  background: transparent!important;
+  border-color: transparent!important;
+  color: #4d4d4d!important;
+}
+:host::ng-deep .p-panelmenu .p-panelmenu-header > a:focus {
+  box-shadow: none!important;
+}
+:host::ng-deep .p-panelmenu .p-panelmenu-header.p-highlight:not(.p-disabled) > a:hover {
+  border: none!important;
+  background: transparent!important;
+  color: #0194D1!important;
+}
+
+:host::ng-deep .p-panelmenu .p-panelmenu-header > a .p-menuitem-icon {
+  margin-right: unset!important;
+  margin-left: 0.5rem;
+}
+:host::ng-deep .p-panelmenu .p-panelmenu-content .p-menuitem .p-menuitem-link .p-panelmenu-icon {
+  left: 0;
+  margin-right: unset!important;
+  margin-left: 0.5rem;
+}
+
+:host::ng-deep .p-panelmenu-content {
+  padding: 0.25rem 0;
+  border: none!important;
+  background-color: #F6F6F6!important;
+  color: #4d4d4d;
+  border-radius: unset!important;
+}
+:host::ng-deep .p-panelmenu .p-panelmenu-content .p-menuitem .p-menuitem-link .p-menuitem-icon {
+  color: #6c757d;
+  margin-right: unset!important;
+  margin-left: 0.5rem;
+}
+:host::ng-deep .p-panelmenu .p-panelmenu-content .p-submenu-list:not(.p-panelmenu-root-submenu) {
+  padding: 0 1rem 0 0!important;
+}
+:host::ng-deep .p-panelmenu .p-panelmenu-content .p-menuitem .p-menuitem-link:focus {
+  color: #0194D1!important;
+  box-shadow: none!important;
+}
+:host::ng-deep .p-panelmenu .p-panelmenu-content .p-menuitem .p-menuitem-link:not(.p-disabled):hover .p-menuitem-text {
+  color: #0194D1;
+}
+:host::ng-deep .p-panelmenu .p-panelmenu-content .p-menuitem .p-menuitem-link:not(.p-disabled):hover .p-menuitem-icon {
+  color: #0194D1;
+}
+:host::ng-deep .p-panelmenu .p-panelmenu-content .p-menuitem .p-menuitem-link:not(.p-disabled):hover {
+  background: #F6F6F6!important;
+}
