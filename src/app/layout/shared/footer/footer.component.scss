@@ -1,0 +1,47 @@
+.footer-bg{
+  padding-top: 80px;
+  direction: rtl;
+  text-align: right;
+  background-color: #1F1813;
+  color: white;
+}
+.footer-sec{
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+.footer-sec-detail{
+  list-style: none;
+  margin: unset;
+  padding: unset;
+}
+.footer-sec-about {
+  font-size: 14px;
+  font-family: IRANSans_Light;
+  text-align: justify;
+}
+
+.footer-sec-detail li, a{
+  font-size: 14px;
+  font-family: IRANSans_Light;
+  margin-bottom: 3px;
+  cursor: pointer;
+  color: white;
+}
+.copy-bg{
+  padding-top: 20px ;
+  background-color: black;
+}
+.copy-bg p{
+  font-family: IRANSans_Light;
+ text-align: center;
+  color: white;
+  font-size: 14px;
+}
+
+.map {
+  background-color: #1F1813;
+  height: 300px;
+}
+.map iframe{
+  height: 100%;
+}
