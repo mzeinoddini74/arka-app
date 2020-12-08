@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {MenuItem} from 'primeng/api';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-header',
@@ -46,6 +47,12 @@ export class HeaderComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    $(function() {
+      $(document).scroll(function() {
+        let nav = $('#menu-navbar');
+        nav.toggleClass('scrolled', $(this).scrollTop() > nav.height());
+      });
+    });
   }
 
   showMobileMenu(): void {
