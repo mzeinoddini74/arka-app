@@ -1,12 +1,15 @@
 .footer-bg{
-  padding-top: 80px;
+  padding-top: 60px;
   direction: rtl;
   text-align: right;
-  background-color: #1F1813;
+  //background-color: #000000;
   color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, .95),rgba(0, 0, 0, .95)),
+  url('//spin.atomicobject.com/wp-content/uploads/20170324102432/portfolio-tips-feature-image.jpg');
+  background-size: cover;
 }
 .footer-sec{
-  font-size: 15px;
+  font-size: 14px;
   margin-bottom: 20px;
 }
 .footer-sec-detail{
@@ -29,7 +32,7 @@
 }
 .copy-bg{
   padding-top: 20px ;
-  background-color: black;
+  background-color: #161417;
 }
 .copy-bg p{
   font-family: IRANSans_Light;

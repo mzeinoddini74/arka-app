@@ -1,9 +1,6 @@
-.container-fluid {
+.service-bg {
   background-color: #F8F6FA;
-}
 
-.container {
-  height: 100vm;
 }
 
 .container .col-sm {
@@ -29,10 +26,6 @@
   font-family: IRANSans_Bold;
 }
 
-.service-bg {
-  background-color: #ffffff;
-
-}
 
 .img-service{
   height: 150px;

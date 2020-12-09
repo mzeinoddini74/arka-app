@@ -14,27 +14,31 @@ import {MatCardModule} from '@angular/material/card';
 import { ProductsComponent } from './layout/home/products/products.component';
 import { FeaturesComponent } from './layout/home/features/features.component';
 import { TeamComponent } from './layout/home/team/team.component';
-import { BarComponent } from './layout/home/bar/bar.component';
+import { DepartmentComponent } from './layout/home/department/department.component';
+import { ContactComponent } from './layout/home/contact/contact.component';
 import {SharedModule} from 'primeng/api';
 import {CardModule} from 'primeng/card';
 import {ButtonModule} from 'primeng/button';
-import { HomeProjectComponent } from './layout/home/home-project/home-project.component';
 import { FooterComponent } from './layout/shared/footer/footer.component';
+import {BarComponent} from './layout/home/bar/bar.component';
+import { WhyUsComponent } from './layout/home/why-us/why-us.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent,
-    HeaderComponent,
-    HomeAboutComponent,
-    ServicesComponent,
-    ProductsComponent,
-    FeaturesComponent,
-    BarComponent,
-    TeamComponent,
-    HomeProjectComponent,
-    FooterComponent
-  ],
+    declarations: [
+        AppComponent,
+        HomeComponent,
+        HeaderComponent,
+        HomeAboutComponent,
+        ServicesComponent,
+        ProductsComponent,
+        FeaturesComponent,
+        DepartmentComponent,
+        TeamComponent,
+        FooterComponent,
+        ContactComponent,
+        BarComponent,
+        WhyUsComponent
+    ],
   imports: [
     BrowserModule,
     AppRoutingModule,

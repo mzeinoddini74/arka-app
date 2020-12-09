@@ -1,0 +1,36 @@
+.why-bg{
+  background-color: #F8F6FA;
+  padding-top: 80px;
+}
+.box-alice {
+  padding: 15px;
+}
+.box-alice__inner {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  text-align: left;
+}
+.box-alice__aside {
+  flex-shrink: 0;
+}
+.box-alice__icon {
+  padding: 0 10px 5px 10px;
+  font-size: 25px;
+  color: #0194D1;
+}
+.box-alice:hover{
+  box-shadow: 0 0 29px 0 rgba(41, 41, 41, 0.19);
+}
+.box-alice__main{
+  text-align: right;
+}
+.box-alice__title{
+  font-family: IRANSans_Light;
+  font-size: 20px;
+}
+.box-alice__main p{
+  font-family: IRANSans_Light;
+  font-size: 14px;
+  color: #6c757d;
+}

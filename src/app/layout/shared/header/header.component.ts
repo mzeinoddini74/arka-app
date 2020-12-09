@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {MenuItem} from 'primeng/api';
 import * as $ from 'jquery';
+import {ViewportScroller} from '@angular/common';
 
 @Component({
   selector: 'app-header',
@@ -11,39 +12,57 @@ export class HeaderComponent implements OnInit {
   items: MenuItem[];
   displayMobileMenu = false;
 
-  constructor() {
+  constructor(private viewportScroller: ViewportScroller) {
     this.items = [
       {
         label: 'صفحه اصلی',
         icon: 'pi pi-pw pi-home',
-        routerLink: '/'
+        command: event => this.onClick('home-sec')
       },
       {
         label: 'درباره ما',
         icon: 'pi pi-fw pi-info-circle',
-        routerLink: '/about'
+        command: event => this.onClick('about-sec')
       },
       {
         label: 'خدمات',
         icon: 'pi pi-fw pi-info-circle',
-        routerLink: '/service'
+        command: event => this.onClick('services-sec')
       },
       {
         label: 'پروژه ها',
         icon: 'pi pi-fw pi-info-circle',
-        routerLink: '/project'
+        command: event => this.onClick('projects-sec')
+      },
+      {
+        label: 'دپارتمان ها',
+        icon: 'pi pi-fw pi-info-circle',
+        command: event => this.onClick('departments-sec')
+      },
+      {
+        label: 'تیم کاری',
+        icon: 'pi pi-fw pi-info-circle',
+        command: event => this.onClick('team-sec')
       },
       {
         label: 'تماس با ما',
         icon: 'pi pi-fw pi-info-circle',
-        routerLink: '/contact'
+        command: event => this.onClick('contact-sec')
       },
       {
         label: 'سفارش پروژه',
         icon: 'pi pi-fw pi-info-circle',
-        routerLink: '/request'
+        command: event => this.onClick('')
       }
     ];
+  }
+
+  public onClick(elementId: string): void {
+    this.viewportScroller.scrollToAnchor(elementId);
+
+    if (this.displayMobileMenu === true){
+      this.displayMobileMenu = false;
+    }
   }
 
   ngOnInit(): void {
