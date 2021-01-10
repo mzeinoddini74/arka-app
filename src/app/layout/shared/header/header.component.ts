@@ -26,32 +26,37 @@ export class HeaderComponent implements OnInit {
       },
       {
         label: 'خدمات',
-        icon: 'pi pi-fw pi-info-circle',
+        icon: 'pi pi-fw pi-th-large',
         command: event => this.onClick('services-sec')
       },
       {
         label: 'پروژه ها',
-        icon: 'pi pi-fw pi-info-circle',
+        icon: 'pi pi-fw pi-desktop',
         command: event => this.onClick('projects-sec')
       },
       {
         label: 'دپارتمان ها',
-        icon: 'pi pi-fw pi-info-circle',
+        icon: 'pi pi-fw pi-sitemap',
         command: event => this.onClick('departments-sec')
       },
       {
         label: 'تیم کاری',
-        icon: 'pi pi-fw pi-info-circle',
+        icon: 'pi pi-fw pi-users',
         command: event => this.onClick('team-sec')
       },
       {
+        label: 'نمونه کارها',
+        icon: 'pi pi-fw pi-search',
+        command: event => this.onClick('work-samples')
+      },
+      {
         label: 'تماس با ما',
-        icon: 'pi pi-fw pi-info-circle',
+        icon: 'pi pi-fw pi-phone',
         command: event => this.onClick('contact-sec')
       },
       {
         label: 'سفارش پروژه',
-        icon: 'pi pi-fw pi-info-circle',
+        icon: 'pi pi-fw pi-check-square',
         command: event => this.onClick('')
       }
     ];

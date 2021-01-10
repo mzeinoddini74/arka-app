@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {CardModule} from 'primeng/card';
 
 @Component({
   selector: 'app-features',
@@ -12,5 +11,4 @@ export class FeaturesComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }

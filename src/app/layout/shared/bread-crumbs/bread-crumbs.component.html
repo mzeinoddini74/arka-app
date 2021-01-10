@@ -1,0 +1,78 @@
+<div class="wrapper" id="home-sec">
+  <header class="pc-header">
+    <nav class="navbar navbar-expand-lg py-1 fixed-top" id="menu-navbar">
+      <div class="container">
+        <a href="#" class="navbar-brand">
+          <img src="../../../../assets/images/other/logo.svg" alt="Logo" class="img-fluid img-logo">
+        </a>
+        <div class="collapse navbar-collapse appMenu">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item" (click)="onClick('home-sec')"><a class="nav-link">صفحه اصلی</a></li>
+            <li class="nav-item" (click)="onClick('about-sec')"><a class="nav-link">درباره ما</a></li>
+            <li class="nav-item" (click)="onClick('services-sec')"><a class="nav-link">خدمات</a></li>
+            <li class="nav-item" (click)="onClick('projects-sec')"><a class="nav-link">پروژه ها</a></li>
+            <li class="nav-item" (click)="onClick('departments-sec')"><a class="nav-link">دپارتمان ها</a></li>
+            <li class="nav-item" (click)="onClick('team-sec')"><a class="nav-link">تیم کاری</a></li>
+            <li class="nav-item" (click)="onClick('contact-sec')"><a class="nav-link">تماس با ما</a></li>
+          </ul>
+
+          <section class="float-left btns-account">
+            <a routerLink="/" routerLinkActive="active" class="btn account-btn">
+              سفارش پروژه
+            </a>
+          </section>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid header-content">
+      <div class="row justify-content-center">
+        <div class="col-12 pt-5 align-self-center">
+          <h3>
+            {{title}}
+          </h3>
+          <ul class="list-inline">
+            <li class="list-inline-item"><a href="/">صفحه اصلی</a>  <i class="fa fa-chevron-left mx-2"></i></li>
+            <li class="list-inline-item">{{title}} </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <header class="mobile-header">
+    <nav class="navbar navbar-expand-lg py-1">
+      <div class="container">
+        <a href="#" class="navbar-brand">
+          <img src="../../../../assets/images/other/logo.svg" alt="Logo" class="img-fluid img-logo">
+        </a>
+        <button (click)="showMobileMenu()" type="button" style="background-color: transparent">
+          <i class="fa fa-bars text-white"></i>
+        </button>
+      </div>
+    </nav>
+    <div class="container justify-content-center header-content">
+      <div class="col-12 pt-5 align-self-center">
+        <h4>
+          شرکت دانش بنیان محاسبات نرم فناوری اطلاعات و ارتباطات آرکا
+        </h4>
+        <p>
+          تخصص توانایی حل مسئله تعهد
+        </p>
+      </div>
+    </div>
+  </header>
+</div>
+
+<!-- MENU -->
+<p-sidebar class="menuSidebar" Scroll [(visible)]="displayMobileMenu" [blockScroll]="true"
+           [modal]="true"
+           position="right">
+  <div class=" text-center shoppingMe">
+    <img height="60px" src="assets/images/other/logo.svg">
+  </div>
+  <div class="d-flex flex-column">
+    <div class="mb-auto">
+      <p-panelMenu [model]="items" [style]="{'width':'100%'}"></p-panelMenu>
+    </div>
+  </div>
+</p-sidebar>

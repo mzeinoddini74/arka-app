@@ -7,36 +7,7 @@
 //  background-size: cover;
 //  height: 500px;
 //}
-//
-//.send-btn {
-//  font-weight: 400;
-//  font-size: 14px;
-//  color: #ffffff;
-//  padding: 30px;
-//  padding-top: 10px;
-//  padding-bottom: 10px;
-//  position: relative;
-//  z-index: 1;
-//  transition: all .5s ease;
-//  line-height: unset;
-//  border-radius: 0px;
-//  background-color: #026dbf;
-//  align-self: center;
-//
-//}
-//.send-btn:hover{
-//  border: 1.5px #0194D1 solid;
-//  background-color: transparent;
-//  color: #026dbf;
-//
-//
-//}
-.bg-blue{
-  background-color: #0194D1;
-  color: white!important;
-  padding-top: 80px;
-  text-align: right;
-}
+
 .bg-white{
   background-color: #ffffff;
   text-align: right;
@@ -80,13 +51,14 @@
    right: 0;
    bottom: 2px;
    width: 4px;
-   background: #0194D1;
+   background: #026dbf;
  }
 .list-terms-medium dt {
   letter-spacing: .1em;
   font-weight: 700;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #4d4d4d;
+  font-family: IRANSans_Bold;
 }
 .list-creative {
   list-style: none;
@@ -99,8 +71,8 @@
   padding-top: 10px;
 }
 .list-creative dd a, .list-creative > li a {
-  color: #ffffff;
-  font-family: IRANSans_Light;
+  color: #4d4d4d;
+  font-family: IRANSans_Bold;
   font-size: 14px;
 }
 .list-creative > li {
@@ -122,6 +94,107 @@
   padding-bottom: 10px;
   min-height: 50px;
   color: #ffffff;
-  background-color: #0194D1;
-  border-color: #0194D1;
+  background-color: #026dbf;
+  border-color: #026dbf;
 }
+
+
+//
+//.col-right{
+//  background-image: linear-gradient(rgba(#026dbf, .6),rgba(#2586eb, .6),rgba(#026dbf, .6)),
+//  url('../../../../assets/images/bg/1.jpg');
+//  background-size: cover;
+//  height: 380px;
+//  text-align: right;
+//  padding-top: 35px;
+//}
+//.col-left{
+//  padding-top: 10px;
+//  padding-inline: 35px;
+//  background-color: #ffffff;
+//}
+//.list-terms-medium {
+//  position: relative;
+//  padding-left: 30px;
+//}
+//.form-wrap {
+//  position: relative;
+//}
+//.row-md-30 > * {
+//  margin-bottom: 30px;
+//}
+//.form-input {
+//  order: 3;
+//  display: block;
+//  padding: 12px 19px;
+//  width: 100%;
+//  min-height: 50px;
+//  font-size: 14px;
+//  font-weight: 400;
+//  line-height: 24px;
+//  color: #9b9b9b;
+//  background-color: #f5f5f5;
+//  background-image: none;
+//  border-radius: 0;
+//  -webkit-appearance: none;
+//  transition: .3s ease-in-out;
+//  border: 1px solid #f5f5f5;
+//}
+//.btn-blue {
+//  padding-top: 10px;
+//  padding-bottom: 10px;
+//  min-height: 50px;
+//  color: #ffffff;
+//  background-color: #026dbf;
+//  border-color: #026dbf;
+//}
+//
+//.list-terms-medium {
+//  position: relative;
+//  padding-right: 30px;
+//}
+// .list-terms-medium::before {
+//   content: '';
+//   position: absolute;
+//   top: 2px;
+//   right: 0;
+//   bottom: 2px;
+//   width: 4px;
+//   background: #ffffff;
+// }
+//.list-terms-medium dt {
+//  letter-spacing: .1em;
+//  font-weight: 700;
+//  text-transform: uppercase;
+//  color: #ffffff;
+//  font-family: IRANSans_Bold;
+//}
+//.list-creative {
+//  list-style: none;
+//  padding: 0;
+//}
+//.list-creative dd {
+//  list-style: none;
+//  padding: 0;
+//  margin: 0;
+//  padding-top: 10px;
+//}
+//.list-creative dd a, .list-creative > li a {
+//  color: #ffffff;
+//  font-family: IRANSans_Bold;
+//  font-size: 15px;
+//}
+//.list-creative > li {
+//  padding: 10px 0;
+//}
+//.list-creative > li + li {
+//  border-top: 1px solid #ffffff;
+//}
+//.list-comma {
+//  list-style: none;
+//  padding: 0;
+//}
+//.list-terms-medium {
+//  position: relative;
+//  padding-left: 30px;
+//}

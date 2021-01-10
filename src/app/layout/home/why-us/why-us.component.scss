@@ -1,10 +1,26 @@
 .why-bg{
   background-color: #F8F6FA;
-  padding-top: 80px;
 }
 .box-alice {
-  padding: 15px;
+  //padding: 15px;
+  //margin: 10px;
+  //background-color: white;
+  //box-shadow: 0 0 29px 0 rgba(41, 41, 41, 0.19);
+
+
+  -webkit-box-shadow: 0px 6px 40px 0px rgba(148, 146, 245, 0.2);
+  box-shadow: 0px 6px 40px 0px rgba(148, 146, 245, 0.2);
+  padding: 30px 20px;
+  //border-radius: 10px;
+  text-align: center;
+  position: relative;
+  background-color: #fff;
+  margin-bottom: 30px;
+
 }
+
+
+
 .box-alice__inner {
   display: flex;
   flex-direction: row;
@@ -17,20 +33,27 @@
 .box-alice__icon {
   padding: 0 10px 5px 10px;
   font-size: 25px;
-  color: #0194D1;
+  color: #026dbf;
 }
-.box-alice:hover{
-  box-shadow: 0 0 29px 0 rgba(41, 41, 41, 0.19);
-}
+
 .box-alice__main{
   text-align: right;
+  padding-left: 30px;
 }
 .box-alice__title{
   font-family: IRANSans_Light;
   font-size: 20px;
+  color: #000;
 }
 .box-alice__main p{
   font-family: IRANSans_Light;
   font-size: 14px;
-  color: #6c757d;
+  color: #000;
+  text-align: justify;
 }
+
+.box-alice:hover {
+  background-color: #fff;
+  cursor: default;
+}
+

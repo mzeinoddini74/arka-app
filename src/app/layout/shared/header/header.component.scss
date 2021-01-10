@@ -14,12 +14,30 @@
     display: block;
   }
 }
+@media (max-width: 991px) {
+  .featureMobile{
+    display: block;
+  }
+  .featurePc{
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  .featureMobile{
+    display: none;
+  }
+  .featurePc{
+    display: block;
+  }
+}
 
 header {
   width: 100%;
-  height: 500px;
+  height: 600px;
   background-image: linear-gradient(rgba(0, 0, 0, .9),rgba(5, 5, 5, .8),rgba(0, 0, 0, .9)),
-  url('//spin.atomicobject.com/wp-content/uploads/20170324102432/portfolio-tips-feature-image.jpg');
+  //url('//spin.atomicobject.com/wp-content/uploads/20170324102432/portfolio-tips-feature-image.jpg');
+  url('../../../../assets/images/bg/back-header.jpg');
+
   background-size: cover;
   //margin-top: -80px;
 }
@@ -28,9 +46,9 @@ header {
   position: absolute;
   top: 70px;
   //right: 170px;
-  text-align: right;
+  text-align: center;
   color: #ffffff;
-  margin-top: 4%;
+  margin-top: 6%;
 }
 :host ::ng-deep .p-sidebar.p-sidebar-active{
   z-index: 9999!important;
@@ -96,7 +114,7 @@ nav.scrolled {
 }
 
 .img-logo {
-  width: 90px;
+  width: 80px;
 }
 
 .dropdown-item {
@@ -178,20 +196,22 @@ ul {
   z-index: 0;
   background-repeat: repeat;
   background-color: #fff;
-  height: 120px;
+  //height: 120px;
   width: 100%;
   top: -60px;
-  padding: 20px;
+  padding: 10px;
   box-shadow: 0 0 11px rgba(33, 33, 33, .2);
 }
 
 .feature-item {
   text-align: center;
+  padding:8px 8px;
 }
 
-.feature-item h2 {
+.feature-item h5 {
   font-family: IRANSans_Bold;
-  font-size: 15px;
+  font-size: 13px;
+  margin-top: 10px;
 }
 
 .feature-item p {
@@ -283,4 +303,25 @@ ul {
 }
 :host::ng-deep .p-panelmenu .p-panelmenu-content .p-menuitem .p-menuitem-link:not(.p-disabled):hover {
   background: #F6F6F6!important;
+}
+.box-counter__divider::after {
+  content: '';
+  display: inline-block;
+  width: 80px;
+  height: 1.6px;
+  background: #2879fe;
+}
+.box-counter__divider_mobile::after {
+  content: '';
+  display: inline-block;
+  width: 40px;
+  height: 1.6px;
+  background: #2879fe;
+}
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  opacity: 1;
 }
